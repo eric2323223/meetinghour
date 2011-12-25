@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:umadsdk="http://schemas.android.com/apk/res/eric.android.meetinghour"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<eric.android.meetinghour.CityNames
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:id="@+id/city_names" />
+	
+<eric.android.meetinghour.CityHourList
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:id="@+id/hour_list" 
+	android:scrollbars="none"
+	android:layout_weight="1" />
+	
+<net.youmi.android.AdView
+   android:layout_height="wrap_content" 
+   android:id="@+id/adView" 
+   android:layout_width="fill_parent"
+   umadsdk:textColor="#ffffff"    
+   umadsdk:backgroundColor="#4076AA"
+   umadsdk:backgroundTransparent="255"
+   />
+</LinearLayout>
